@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!--CS146: Final Project: html-->
+<!--Team3: Mijeong Ban, Ian Gomez, Dana McGuire, Caroline Rubino, Luke Bukowiec -->
+<!--I pledge my honor that I have abided by the Stevens Honor System.-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dinner Spinner</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/fontello-b8fc1ea0/css/fontello.css">
+    <link rel="stylesheet" href="assets/fontello-9968a741/css/fontello.css">
+    <!--Font Family-->
+    <link href="https://fonts.googleapis.com/css?family=Mukta+Malar|Raleway|Spectral+SC" rel="stylesheet">
+  </head>
+  <body>
+    <div id="bg-wrapper">
+      <!-- Header -->
+      <header>
+        <h1 id="title">
+          <a href="index.html">Dinner Spinner</a>
+        </h1>
+        <nav id="nav">
+          <ul>
+            <li><a href="restaurant.html" class="active">Restaurants</a></li>
+            <li><a href="filter.html">Filter</a></li>
+            <li><a href="spinner.html">Spinner</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Section1: Banner -->
+      <section id="banner2">
+        <div class="item">
+          <h2>Dinner Spinner</h2>
+        </div>
+      </section>
+    </div>
+
+    <!-- Content -->
+    <section id="restaurant">
+      <div class="container">
+        <header>
+          <h2>Restaurant in Hoboken, NJ</h2>
+        </header>
+        <div class="pick">
+          <select onchange="gotoRespage();" id="res-pick">
+            <option >CHOOSE</option>
+            <option value="aether">Aether Game Cafe</option>
+            <option value="amandas">Amanda's Restaurant</option>
+            <option value="bagels">Bagels On The Hudson</option>
+            <option value="bare">Bareburger</option>
+            <option value="benny">Benny Tudino's Pizzeria</option>
+            <option value="bluestone">Bluestone Lane</option>
+            <option value="bwe">Bwè Kafe</option>
+            <option value="chicken">Chicken Factory</option>
+            <option value="empire">Empire Coffee Tea Company</option>
+            <option value="flat">Flatbread Grill</option>
+            <option value="gio">Giovanni's Pizzeria Restaurant</option>
+            <option value="gogi">Gogi Grill</option>
+            <option value="greek">It's Greek To Me</option>
+            <option value="grimaldis">Grimaldi's Pizzeria</option>
+            <option value="honey">Honeygrow</option>
+            <option value="hot">Hoboken Hot Bagel</option>
+            <option value="karma">Karma Kafe</option>
+            <option value="koro">Koro Koro</option>
+            <option value="kung">Kung Fu Tea</option>
+            <option value="lacasa">La Casa</option>
+            <option value="makai">Makai Poke</option>
+            <option value="mamouns">Mamoun's Falafel Restaurant</option>
+            <option value="midtown">Midtown Philly Steaks</option>
+            <option value="mr">Mr. Wrap</option>
+            <option value="pita">Pita Pit</option>
+            <option value="quality">Quality Greens Kitchen</option>
+            <option value="republic">Pizza Republic</option>
+            <option value="robon">Robongi</option>
+            <option value="surf">Surf Taco</option>
+          </select>
+
+        </div>
+        <div class="map">
+          <a class="icon-bullseye" title="Makai Poke" href="assets/restaurantinfo/resInfo_makai.html"></a>
+          <a class="icon-bullseye" title="Gogi Grill" href="assets/restaurantinfo/resInfo_gogi.html"></a>
+          <a class="icon-bullseye" title="Midtown Philly Steaks" href="assets/restaurantinfo/resInfo_midtown.html"></a>
+          <a class="icon-bullseye" title="Flatbread Grill" href="assets/restaurantinfo/resInfo_flat.html"></a>
+          <a class="icon-bullseye" title="Karma Kafe" href="assets/restaurantinfo/resInfo_karma.html"></a>
+          <a class="icon-bullseye" title="Surf Taco" href="assets/restaurantinfo/resInfo_surf.html"></a>
+          <a class="icon-bullseye" title="Bareburger" href="assets/restaurantinfo/resInfo_bare.html"></a>
+          <a class="icon-bullseye" title="Mamoun's Falafel Restaurant" href="assets/restaurantinfo/resInfo_mamouns.html"></a>
+          <a class="icon-bullseye" title="Koro Koro" href="assets/restaurantinfo/resInfo_koro.html"></a>
+          <a class="icon-bullseye" title="Quality Greens Kitchen" href="assets/restaurantinfo/resInfo_quality.html"></a>
+          <a class="icon-bullseye" title="Honeygrow" href="assets/restaurantinfo/resInfo_honey.html"></a>
+          <a class="icon-bullseye" title="La Casa" href="assets/restaurantinfo/resInfo_lacasa.html"></a>
+          <a class="icon-bullseye" title="Bluestone Lane" href="assets/restaurantinfo/resInfo_bluestone.html"></a>
+          <a class="icon-bullseye" title="Kung Fu Tea" href="assets/restaurantinfo/resInfo_kung.html"></a>
+          <a class="icon-bullseye" title="Mr Wrap" href="assets/restaurantinfo/resInfo_mr.html"></a>
+          <a class="icon-bullseye" title="Hoboken Hot Bagel" href="assets/restaurantinfo/resInfo_hot.html"></a>
+          <a class="icon-bullseye" title="Benny Tudino's Pizzeria" href="assets/restaurantinfo/resInfo_benny.html"></a>
+          <a class="icon-bullseye" title="Amanda's Restaurant" href="assets/restaurantinfo/resInfo_amandas.html"></a>
+          <a class="icon-bullseye" title="Pita Pit" href="assets/restaurantinfo/resInfo_pita.html"></a>
+          <a class="icon-bullseye" title="Chicken Factory" href="assets/restaurantinfo/resInfo_chicken.html"></a>
+          <a class="icon-bullseye" title="Bagels On The Hudson" href="assets/restaurantinfo/resInfo_bagels.html"></a>
+          <a class="icon-bullseye" title="Grimaldi's Pizzeria" href="assets/restaurantinfo/resInfo_grimaldis.html"></a>
+          <a class="icon-bullseye" title="Bwè Kafe" href="assets/restaurantinfo/resInfo_bwe.html"></a>
+          <a class="icon-bullseye" title="Aether Game Cafe" href="assets/restaurantinfo/resInfo_aether.html"></a>
+          <a class="icon-bullseye" title="It's Greek To Me" href="assets/restaurantinfo/resInfo_greek.html"></a>
+          <a class="icon-bullseye" title="Giovanni's Pizzeria Restaurant" href="assets/restaurantinfo/resInfo_gio.html"></a>
+          <a class="icon-bullseye" title="Robongi" href="assets/restaurantinfo/resInfo_robon.html"></a>
+          <a class="icon-bullseye" title="Empire Coffee Tea Company" href="assets/restaurantinfo/resInfo_empire.html"></a>
+          <a class="icon-bullseye" title="Pizza Republic" href="assets/restaurantinfo/resInfo_republic.html"></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <ul class="icons">
+          <li><a href="https://github.com/mjireneban/CS146_DinnerSpinner/tree/master" class="icon-github"><span class="label">Github</span></a></li>
+          <li><a href="#" class="icon-twitter"><span class="label">Twitter</span></a></li>
+          <li><a href="#" class="icon-facebook"><span class="label">Facebook</span></a></li>
+          <li><a href="#" class="icon-instagram"><span class="label">Instagram</span></a></li>
+          <li><a href="#" class="icon-email"><span class="label">Email</span></a></li>
+        </ul>
+        <p>Copyright &copy; 2017 Dinner Spinner</p>
+    </footer>
+    <script type="text/javascript" src="assets/js/pickrestaurant.js"></script>
+  </body>
+</html>

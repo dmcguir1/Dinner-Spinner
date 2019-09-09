@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--CS146: Final Project: html-->
+<!--Team3: Mijeong Ban, Ian Gomez, Dana McGuire, Caroline Rubino, Luke Bukowiec -->
+<!--I pledge my honor that I have abided by the Stevens Honor System.-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dinner Spinner</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/fontello-9968a741/css/fontello.css">
+    <!--Font Family-->
+  <link href="https://fonts.googleapis.com/css?family=Mukta+Malar|Raleway|Spectral+SC" rel="stylesheet">
+  </head>
+  <body>
+    <div id="bg-wrapper">
+      <!-- Header -->
+      <header>
+        <h1 id="title">
+          <a href="index.html">Dinner Spinner</a>
+        </h1>
+        <nav id="nav">
+          <ul>
+            <li><a href="restaurant.html">Restaurants</a></li>
+            <li><a href="filter.html" class="active">Filter</a></li>
+            <li><a href="spinner.html">Spinner</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Section1: Banner -->
+      <section id="banner2">
+        <div class="item">
+          <h2>Dinner Spinner</h2>
+        </div>
+      </section>
+    </div>
+
+    <!-- Content -->
+    <section id="filter">
+      <div class="container">
+        <form id = "filter_form" onsubmit = "suggestions(); return false;">
+          <label><input name="rest_types" type = "checkbox" value = "American"> American</label>
+          <label><input name = "rest_types" type = "checkbox" value = "Asian"> Asian</label>
+          <label><input name = "rest_types"  type = "checkbox" value = "Breakfast"> Breakfast</label>
+          <label><input name = "rest_types"  type = "checkbox" value = "Burgers"> Burgers</label>
+          <br>
+          <label><input name = "rest_types"  type = "checkbox" value = "Coffee"> Coffee</label>
+          <label><input  name = "rest_types" type = "checkbox" value = "Cuban"> Cuban</label>
+          <label><input name = "rest_types"  type = "checkbox" value = "Fast_Food"> Fast Food</label>
+          <label><input name = "rest_types"  type = "checkbox" value = "Italian"> Italian</label>
+          <br>
+          <label><input name = "rest_types"  type = "checkbox" value = "Mediterranean"> Mediterranean</label>
+          <label><input name = "rest_types"  type = "checkbox" value = "Mexican"> Mexican</label>
+          <label><input name = "rest_types"  type = "checkbox" value = "Pizza"> Pizza</label>
+          <label><input name = "rest_types"  type = "checkbox" value = "Salad"> Salad</label>
+          <br>
+          <label><input name = "rest_types"  type = "checkbox" value = "Sandwiches"> Sandwiches</label>
+          <label><input name = "rest_types"  type = "checkbox" value = "Seafood"> Seafood</label>
+          <label><input name = "rest_types"  type = "checkbox" value = "Tea"> Tea</label>
+          <label><input name = "rest_types"  type = "checkbox" value = "Vegetarian"> Vegetarian</label>
+          <br>
+          <input id="button" type="submit" value="Submit">
+          <input id="button" type = "reset" value = "reset">
+        </form>
+      </div>
+      <div id = "recc_lst">
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <ul class="icons">
+          <li><a href="https://github.com/mjireneban/CS146_DinnerSpinner/tree/master" class="icon-github"><span class="label">Github</span></a></li>
+          <li><a href="#" class="icon-twitter"><span class="label">Twitter</span></a></li>
+          <li><a href="#" class="icon-facebook"><span class="label">Facebook</span></a></li>
+          <li><a href="#" class="icon-instagram"><span class="label">Instagram</span></a></li>
+          <li><a href="#" class="icon-email"><span class="label">Email</span></a></li>
+        </ul>
+        <p>Copyright &copy; 2017 Dinner Spinner</p>
+    </footer>
+    <script src = "assets/js/filter.js"></script>
+  </body>
+</html>
